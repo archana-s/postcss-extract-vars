@@ -1,15 +1,17 @@
 {
-  "name": "PLUGIN_NAME",
-  "version": "0.0.0",
+  "name": "postcss-extract-vars",
+  "version": "0.0.1",
   "description": "PostCSS plugin PLUGIN_DESC",
   "keywords": [
     "postcss",
     "css",
-    "postcss-plugin"KEYWORDS
+    "postcss-extract-vars",
+    "filter",
+    "customvars"
   ],
-  "author": "AUTHOR_NAME <AUTHOR_EMAIL>",
+  "author": "Archana Sankaranarayanan",
   "license": "MIT",
-  "repository": "GITHUB_NAME/PLUGIN_NAME",
+  "repository": "archana-s/postcss-extract-vars",
   "bugs": {
     "url": "https://github.com/GITHUB_NAME/PLUGIN_NAME/issues"
   },
