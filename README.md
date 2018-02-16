@@ -1,12 +1,13 @@
 # postcss-extract-vars [![Build Status][ci-img]][ci]
 
-[PostCSS] postcss-extract-vars Extracts the custom variables set to root scope.
+[PostCSS] postcss-extract-vars
+Extracts the custom variables set to root scope and stores it in the file provided.
 
 [PostCSS]: https://github.com/postcss/postcss
-[ci-img]:  https://travis-ci.org/GITHUB_NAME/PLUGIN_NAME.svg
-[ci]:      https://travis-ci.org/GITHUB_NAME/PLUGIN_NAME
+[ci-img]:  https://travis-ci.org/archana-s/postcss-extract-vars.svg
+[ci]:      https://travis-ci.org/archana-s/postcss-extract-vars
 
-```input css
+```css
 :root {
     --color-primary: red;
     --color-secondary: blue;
@@ -19,7 +20,7 @@
 }
 ```
 
-```output
+```css
 :root {
     --color-primary: red;
     --color-secondary: blue;
@@ -30,6 +31,13 @@
 
 ```js
 postcss([ require('postcss-extract-vars') ])
+```
+
+## Options
+```js
+{
+    file: <PATH TO OUTPUT FILE>
+}
 ```
 
 See [PostCSS] docs for examples for your environment.
